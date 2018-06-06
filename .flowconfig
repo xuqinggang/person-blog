@@ -1,0 +1,31 @@
+[ignore]
+<PROJECT_ROOT>/dist/.*
+
+[include]
+
+[libs]
+./flow
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.css
+module.file_ext=.less
+module.file_ext=.scss
+
+module.use_strict=true
+
+module.name_mapper='^pages\/\(.*\)$' -> '<PROJECT_ROOT>/src/pages/\1'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^shared\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/shared/\1'
+module.name_mapper='^reduxs\/\(.*\)$' -> '<PROJECT_ROOT>/src/reduxs/\1'
+module.name_mapper='^utils\/\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.name_mapper='^images\/\(.*\)$' -> '<PROJECT_ROOT>/src/images/\1'
+module.name_mapper='^styles\/\(.*\)$' -> '<PROJECT_ROOT>/src/styles/\1'
+module.name_mapper='^routers\/\(.*\)$' -> '<PROJECT_ROOT>/src/routers/\1'
+
+esproposal.decorators=ignore
+[strict]
